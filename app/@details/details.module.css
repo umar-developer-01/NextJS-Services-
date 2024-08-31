@@ -1,0 +1,73 @@
+.mainContainer {
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+    padding:2rem;
+    /* display: flex;
+    justify-content: center; */
+}
+
+
+.innerContainer {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    /* width:max-content; */
+    padding: 5rem;      
+    display: flex;
+    flex-direction: column;
+} 
+
+.heading {
+    align-self:center;
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-size:25px;
+    font-family: var(--dancing_script);
+}
+
+
+.subHeading {
+   align-self: center;
+   font-size:17px;
+   margin-bottom: 10px;
+}
+
+.listing {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    font-size: 15px;
+}
+
+.listingContainer {
+    display: flex;
+    align-items: center; /* Aligns the arrow and text vertically */
+    gap: 20px; /* Adjusted gap to provide better spacing */
+  }
+  
+.arrow {
+    margin-left: 2px;
+    border: solid gold;
+    border-width: 0 2px 2px 0; /* Adjusted border-width for better proportion */
+    display: inline-block;
+    padding: 3px; /* Reduced padding to minimize distortion */
+    transform: rotate(-45deg); /* Rotate arrow to face right */
+    width: 8px; /* Define width for consistency */
+    height: 8px; /* Define height for consistency */
+  }
+
+
+@media only screen and (max-width:500px){
+
+    .mainContainer {
+        padding:1rem;
+
+    }
+
+
+    .innerContainer {
+        padding:1rem;
+
+    }
+
+}
+

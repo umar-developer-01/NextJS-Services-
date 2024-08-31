@@ -1,0 +1,19 @@
+.bannerDetailsContainer {
+  display: flex;
+}
+
+.detailsCotianer {
+  flex: 0 0 60%;
+}
+
+.bannerContainer {
+  flex: 1;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .bannerDetailsContainer {
+    flex-direction: column;
+  }
+}
