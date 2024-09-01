@@ -2,7 +2,7 @@ import Slider1 from "../../images/image1.jpg";
 import Slider2 from "../../images/image2.jpg";
 import Slider3 from "../../images/image3.webp";
 import Slider4 from "../../images/image4.jpg";
-import ImageSlider from "../../components/slider"
+import ImageSlider from "../../components/slider/slider"
 import sliderModule from "./slider.module.css"
 
 export default function Slides() {
