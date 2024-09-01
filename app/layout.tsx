@@ -9,11 +9,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
+  header,
   children,
   slider,
   details,
   banner,
 }: Readonly<{
+  header:React.ReactNode;
   children: React.ReactNode;
   slider: React.ReactNode;
   details: React.ReactNode;
@@ -26,6 +28,9 @@ export default function RootLayout({
         className={`${inter.variable} ${sevillana.variable} ${dancing_script.variable}`}
       >
         <div className="app-wrapper">
+          <div>
+            {header}
+          </div>
           {children}
           {slider}
           <div className={layoutStyle.bannerDetailsContainer}>
