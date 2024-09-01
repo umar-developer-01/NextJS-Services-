@@ -4,7 +4,7 @@
     height: 60px;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     background-color: #fff;
     box-shadow: var(--shadow-light);
   }
@@ -76,7 +76,7 @@
     }
   
     .hamburgerContainer {
-      align-self: center;
+
       display: flex;
       justify-content: center;
       align-items: center;
