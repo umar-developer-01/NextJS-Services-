@@ -35,31 +35,8 @@
   
   .hamburgerContainer {
     display: none;
-    cursor: pointer;
-    position: relative;
-    width: 30px;
-    height: 24px;
   }
   
-  .hamburger {
-    position: absolute;
-    width: 25px;
-    height: 3px;
-    background-color: #7e7a7a;
-    transition: all 0.3s ease;
-  }
-  
-  .hamburger:nth-child(1) {
-    top: 0;
-  }
-  
-  .hamburger:nth-child(2) {
-    top: 10px;
-  }
-  
-  .hamburger:nth-child(3) {
-    top: 20px;
-  }
   
   @media only screen and (max-width: 600px) {
     .logoContainer {
@@ -76,11 +53,34 @@
     }
   
     .hamburgerContainer {
-
+      cursor: pointer;
+      position: relative;
+      width: 30px;
+      height: 24px;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-right: 20px;
+    }
+
+    .hamburger {
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #7e7a7a;
+      transition: all 0.3s ease;
+    }
+    
+    .hamburger:nth-child(1) {
+      top: 0;
+    }
+    
+    .hamburger:nth-child(2) {
+      top: 10px;
+    }
+    
+    .hamburger:nth-child(3) {
+      top: 20px;
     }
   
     /* Transformations for "X" sign */
