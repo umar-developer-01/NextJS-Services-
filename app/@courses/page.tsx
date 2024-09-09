@@ -39,10 +39,10 @@ export default function Courses() {
             </div>
              
 
-            <div className={indexStyles.listingContainer}>
+            {/* <div className={indexStyles.listingContainer}>
               <div className={indexStyles.arrow}></div>
               <p className={indexStyles.p}>Cidesco Course</p>
-            </div>
+            </div> */}
 
             <div className={indexStyles.listingContainer}>
               <div className={indexStyles.arrow}></div>
