@@ -11,7 +11,7 @@ export default function Address() {
         </div>
         <div className={indexStyles.content}>
 
-        <p className={indexStyles.p}>2358/38 gali shachhada opposite jeevan zarda factory</p> 
+        <p className={indexStyles.p}>2358/38 Gali shachhada opposite jeevan zarda factory</p> 
         
         <p className={indexStyles.p}>Patanala Chowk Lucknow Uttar Pradesh 226003</p>
         </div>
