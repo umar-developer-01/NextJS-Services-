@@ -61,10 +61,10 @@ export default function ImageSlider({ slides }: Slides) {
         {
           slides.map((_,index)=>{
             return (
-              <>
+ 
               <button onClick={()=>setimageIndex(index)} key={index} className={sliderStyles.dotButton}>
                 {index=== imageIndex? <CircleDot/>:<Circle/>}</button>
-              </>
+   
             )
           })
         }

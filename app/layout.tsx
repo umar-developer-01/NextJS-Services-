@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { inter, sevillana, dancing_script } from "../fonts";
+import { AppProvider } from "@/appContext/index";
+import { ModalProvider } from "@/modal/context";
 import layoutStyle from "./layout.module.css";
 import "./global.css";
 
@@ -14,12 +16,18 @@ export default function RootLayout({
   slider,
   details,
   banner,
+  courses,
+  sidebar,
+  address
 }: Readonly<{
-  header:React.ReactNode;
+  header: React.ReactNode;
   children: React.ReactNode;
   slider: React.ReactNode;
   details: React.ReactNode;
   banner: React.ReactNode;
+  sidebar:React.ReactNode;
+  courses:React.ReactNode;
+  address:React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -27,17 +35,24 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${sevillana.variable} ${dancing_script.variable}`}
       >
-        <div className="app-wrapper">
-          <div>
-            {header}
-          </div>
-          {children}
-          {slider}
-          <div className={layoutStyle.bannerDetailsContainer}>
-            <div className={layoutStyle.detailsCotianer}>{details}</div>
-            <div className={layoutStyle.bannerContainer}>{banner}</div>
-          </div>
-        </div>
+        <AppProvider>
+          <ModalProvider>
+            <div className="app-wrapper">
+              <div>{header}</div>
+              {children}
+              {slider}
+              <div className={layoutStyle.bannerDetailsContainer}>
+                <div className={layoutStyle.detailsCotianer}>{details}</div>
+                <div className={layoutStyle.bannerContainer}>{banner}</div>
+                <div>{courses}</div>
+                <div>{address}</div>
+              </div>
+         
+        
+              {sidebar}
+            </div>
+          </ModalProvider>
+        </AppProvider>
       </body>
     </html>
   );

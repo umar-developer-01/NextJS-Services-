@@ -1,0 +1,52 @@
+.mainContainer {
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+    padding:2rem;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.innerContainer {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    height:100%;
+    padding: 5rem;      
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+} 
+
+
+.heading {
+    margin-bottom: 1px;
+    text-align: center;
+    font-size:25px;
+    font-family: var(--dancing_script);   
+}
+
+.content {
+    padding:10px;
+}
+
+.p {
+    font-size:17px;
+    text-align: center;
+
+}
+
+@media only screen and (max-width:500px){
+
+    .mainContainer {
+        padding:1rem;
+
+    }
+
+
+    .innerContainer {
+        padding:1rem;
+
+    }
+
+}

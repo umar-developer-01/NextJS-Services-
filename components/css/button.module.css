@@ -1,0 +1,61 @@
+.button {
+    all: unset;
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* Adjust padding as needed */
+    margin: 0.5rem; /* Adjust margin as needed */
+    background-color: #007bff; /* Default background color */
+    color: white; /* Default text color */
+    border: 2px solid transparent; /* Default border */
+    border-radius: 0.375rem; /* Rounded corners */
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out, border-color 150ms ease-in-out, transform 100ms ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Hover background color */
+  }
+  
+  .button:focus {
+    outline: none;
+    border-color: #0056b3; /* Focus border color */
+  }
+  
+  .button:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+    background-color: #003865; /* Active background color */
+  }
+  
+  /* Optional: Disabled state */
+  .button:disabled {
+    background-color: #d6d6d6;
+    color: #7a7a7a;
+    cursor: not-allowed;
+    border-color: #d6d6d6;
+  }
+  
+  /* Optional: Modify button for different variations */
+  .button--primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .button--secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .button--outline {
+    background-color: transparent;
+    color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .button--outline:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Add more variations as needed */
+  
