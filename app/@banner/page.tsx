@@ -7,7 +7,7 @@ export default function Banner() {
         <div className={bannerStyle.innerContainer}>
           <div className={bannerStyle.heading}>Classes Updates</div>
           <div className={bannerStyle.subHeading}>
-            India's No 1 Award Winning Beauty And Makeup Academy.
+            India No 1 Award Winning Beauty And Makeup Academy.
           </div>
           <div className={bannerStyle.listing}>
             <div className={bannerStyle.innerListing}>
