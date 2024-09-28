@@ -18,7 +18,8 @@ export default function RootLayout({
   banner,
   courses,
   sidebar,
-  address
+  address,
+  contactus
 }: Readonly<{
   header: React.ReactNode;
   children: React.ReactNode;
@@ -28,6 +29,7 @@ export default function RootLayout({
   sidebar:React.ReactNode;
   courses:React.ReactNode;
   address:React.ReactNode;
+  contactus:React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -46,6 +48,8 @@ export default function RootLayout({
                 <div className={layoutStyle.bannerContainer}>{banner}</div>
                 <div>{courses}</div>
                 <div>{address}</div>
+                {/* <div>{contactus}</div> */}
+
               </div>
          
         
