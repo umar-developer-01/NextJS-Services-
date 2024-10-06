@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 export default function RootLayout({
   header,
   children,
-
   details,
   banner,
   courses,
@@ -24,7 +23,6 @@ export default function RootLayout({
 }: Readonly<{
   header: React.ReactNode;
   children: React.ReactNode;
-
   details: React.ReactNode;
   banner: React.ReactNode;
   sidebar:React.ReactNode;
