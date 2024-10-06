@@ -13,23 +13,25 @@ export const metadata: Metadata = {
 export default function RootLayout({
   header,
   children,
-  slider,
+
   details,
   banner,
   courses,
   sidebar,
   address,
-  contactus
+  contactus,
+  services
 }: Readonly<{
   header: React.ReactNode;
   children: React.ReactNode;
-  slider: React.ReactNode;
+
   details: React.ReactNode;
   banner: React.ReactNode;
   sidebar:React.ReactNode;
   courses:React.ReactNode;
   address:React.ReactNode;
   contactus:React.ReactNode;
+  services:React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -42,8 +44,9 @@ export default function RootLayout({
             <div className="app-wrapper">
               <div>{header}</div>
               {children}
-              {slider}
+      
               <div className={layoutStyle.bannerDetailsContainer}>
+                <div>{services}</div>
                 <div className={layoutStyle.detailsCotianer}>{details}</div>
                 <div className={layoutStyle.bannerContainer}>{banner}</div>
                 <div>{courses}</div>
